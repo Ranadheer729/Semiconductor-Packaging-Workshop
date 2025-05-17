@@ -54,3 +54,17 @@ This repository documents the **"Introduction to Semiconductor Packaging"** work
 ## 🧰 Tools Used
 
 - ANSYS Electronics Desktop (AEDT)
+
+---
+
+## 🧰 Tools Used
+
+- ANSYS Electronics Desktop (AEDT)
+
+---
+
+## 🔗 Download Project Files
+
+- [Project 1: Thermal Analysis (.aedt)](./Project1_ThermalAnalysis.aedt)  
+- [Project 2: Package Design (.aedt)](./Project2_Package.aedt)
+
