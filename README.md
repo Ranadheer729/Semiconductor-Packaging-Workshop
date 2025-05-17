@@ -55,11 +55,6 @@ This repository documents the **"Introduction to Semiconductor Packaging"** work
 
 - ANSYS Electronics Desktop (AEDT)
 
----
-
-## 🧰 Tools Used
-
-- ANSYS Electronics Desktop (AEDT)
 
 ---
 
