@@ -711,5 +711,71 @@ Wire bonding is a widely adopted method to establish electrical connections betw
 ## 🎥 Additional Resource  
 📎 [HB100 Automatic Wire Bonder](https://www.youtube.com/watch?v=3YkGrhvrWxA)
 
+---
+ 
+## 📍 Lecture 4: Flip Chip Assembly – Bump Formation and Underfill
 
+**Flip Chip Packaging** is a high-performance interconnection technique where the die is mounted **face-down** onto the substrate using **solder bumps** formed directly on the I/O pads. Unlike traditional wire bonding, flip chip allows for **shorter interconnect paths**, improved electrical performance, and more compact packaging.
+
+![l4a](https://github.com/user-attachments/assets/82d03edb-0486-456c-a77b-163bd72ca97a)
+
+---
+
+## 🔄 Flip Chip vs. Wire Bonding
+
+| Aspect             | Wire Bonding                     | Flip Chip                                |
+|--------------------|----------------------------------|-------------------------------------------|
+| Die Orientation     | Face-up                         | Face-down                                 |
+| Interconnect Type   | Metal wires                     | Solder bumps                              |
+| Electrical Path     | Longer                          | Shorter (better performance)              |
+| Heat Dissipation    | Limited                         | Better (via substrate connection)         |
+| Form Factor         | Larger                          | Compact, high-density                     |
+
+---
+
+## 🔧 Flip Chip Packaging Process – Step-by-Step
+
+### 1️⃣ Bump Formation
+- **Solder bumps** (e.g., SnAgCu) or microbumps are formed on the die’s I/O pads.
+- **Techniques used**:
+  - Electroplating  
+  - Solder paste printing  
+  - Stud bumping  
+
+### 2️⃣ Wafer-Level Testing & Dicing
+- Bumped wafers are functionally tested.
+- Wafers are then **diced into individual dies**.
+
+### 3️⃣ Die Placement (Flip)
+- The die is flipped **face-down** so the solder bumps align with substrate pads.
+- **Precision alignment** ensures proper connectivity.
+
+### 4️⃣ Reflow Soldering
+- The die-substrate assembly is passed through a **reflow oven**.
+- Solder bumps **melt and form solid joints**, ensuring strong mechanical and electrical connection.
+
+### 5️⃣ Underfill Application
+- **Underfill epoxy** is dispensed between the die and substrate.
+- Improves reliability by:
+  - Preventing solder joint fatigue  
+  - Enhancing mechanical stability  
+  - Improving thermal performance
+
+### 6️⃣ Molding / Encapsulation *(if needed)*
+- Optional for extra mechanical protection in consumer/mobile applications.
+
+### 7️⃣ Final Testing and Singulation
+- Electrical testing and **X-ray inspection** validate the assembly.
+- If packaged in panels, units are **singulated** into individual packages.
+
+---
+
+## ✅ Key Advantages
+
+- **Higher I/O density**
+- **Improved signal integrity**
+- **Superior heat dissipation**
+- **More compact package size**
+
+---
 
