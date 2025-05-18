@@ -112,5 +112,83 @@ The semiconductor industry includes many types of companies working together:
 
 ![l1b](https://github.com/user-attachments/assets/73eb7b27-59b7-4ddb-a6fa-1ee2fbc1216a)
 
+---
+
+# 📘 Lecture 2: Understanding Package Requirements and Foundational Package Types
+
+## 📦 Package Requirements
+
+In System on Chip (SoC) design, selecting the right package is essential for achieving high levels of reliability, performance, and thermal efficiency. A package forms a critical bridge between the silicon die and the printed circuit board (PCB), ensuring that electrical, mechanical, and thermal interactions are properly managed.
+
+![l2a](https://github.com/user-attachments/assets/c6e6c32a-5980-4c90-bc6b-27bfe7617356)
+
+The chip is mounted on a package, which is then integrated onto the PCB. This arrangement raises an important design question: **how do we choose the most suitable package?**
+
+### 🔌 Electrical Connectivity
+
+An essential criterion is the package's ability to handle electrical communication. For systems that require high-speed data transfer, the package must support a sufficient number of pins or interconnects to ensure smooth and efficient signal transmission.
+
+### 🌡️ Thermal Management
+
+Effective thermal performance is crucial. Packages must dissipate heat efficiently, especially in systems that operate under high temperatures (e.g., above 200°C). In such scenarios, traditional laminate-based substrates may fail, prompting the use of high-performance materials such as ceramic.
+
+### 📐 Form Factor
+
+The physical dimensions and layout of the package must align with available board space. Compact or space-constrained applications may demand low-profile or custom-shaped packaging solutions.
+
+### 🔄 Reliability and Durability
+
+Long-term performance hinges on the robustness of the materials used. The package must withstand mechanical stress, environmental exposure, and thermal cycling without degrading over time.
+
+### 💲 Cost Constraints
+
+Finally, cost plays a decisive role. The chosen packaging solution must meet the design goals while staying within the allocated budget. Achieving a balance between performance and cost is a key part of SoC design.
+
+---
+
+## 🧱 Typical Package Structure
+
+The following outlines the general structure of a standard semiconductor package:
+
+![l2b](https://github.com/user-attachments/assets/2e6a5f8b-a4c1-44d2-95da-1a4916b4db22)
+
+1. **Die Placement**  
+   The silicon die is mounted on a substrate or carrier. This step initiates both mechanical support and electrical contact.
+
+2. **Substrate Material**  
+   The substrate — often made of ceramic, organic laminates, or metal cores — provides the foundation for electrical pathways and heat dissipation.
+
+3. **Die Connections**  
+   The die is connected to the substrate using bond wires or solder bumps, creating electrical pathways from the chip to the board.
+
+4. **Board Interface**  
+   The substrate is then soldered or connected to the PCB, allowing for integration into the larger system.
+
+5. **Encapsulation**  
+   A molding compound (commonly epoxy or plastic) is applied to protect the internal components from moisture, contaminants, and physical damage.
+
+---
+
+## ⚙️ Mounting Technologies
+
+Two dominant methods are used for mounting components on PCBs:
+
+### 🔩 Through-Hole Mounting (THM)
+
+- Component leads pass through pre-drilled holes in the PCB.
+- Leads are soldered on the underside of the board.
+- Offers strong mechanical bonds and is preferred in high-reliability applications.
+- Typically used for larger components or power devices.
+
+### 🔧 Surface Mount Technology (SMT)
+
+- Components are placed directly onto the PCB surface.
+- Solder paste and automated equipment are used for placement and reflow.
+- Enables compact layouts and high component density.
+- Standard in most modern electronics due to its efficiency and scalability.
+
+---
+
+
 
 
