@@ -1165,3 +1165,133 @@ Burn-In, Final Test, and ATE collectively ensure that semiconductor packages:
 - Are ready for real-world deployment
 
 These steps are especially crucial for high-performance and mission-critical applications.
+
+---
+
+# 📦 Module 5: Package Design and Modeling in ANSYS AEDT
+
+## 🎯 Objective
+Design a semiconductor wire bond package from scratch using **ANSYS Electronics Desktop (AEDT)**, including:
+- Die
+- Substrate
+- Bond wires
+- Mold compound
+
+This lab focuses on geometry creation, not simulation.
+
+---
+
+## 🏭 Package Manufacturing Flow
+
+![l5a](https://github.com/user-attachments/assets/fd649f3b-a741-4695-a4a1-0ee92f8fb5fd)
+
+1. **Wafer Reception**
+   - Wafers (200mm/300mm) from the foundry.
+   - Inspected and stored in FOUPs to avoid contamination.
+
+2. **Wafer Backgrinding**
+   - Reduces wafer thickness using backside grinding.
+   - Protective tape is applied to the front side.
+
+3. **Wafer Dicing / Singulation**
+   - Dies are separated using:
+     - Blade dicing (mechanical)
+     - Laser grooving + breaking (fine-pitch)
+
+4. **Die Attach**
+   - Methods: Epoxy dispensing or Die Attach Film (DAF)
+   - Cure using UV or thermal process.
+
+5. **Interconnect / Bonding**
+   - **Wire Bonding**: Au/Cu/Al wires connect die to substrate.
+   - **Flip-Chip Bonding**: Solder bumps connect die directly.
+
+6. **Encapsulation / Molding**
+   - Epoxy Molding Compound (EMC) used to protect die & wires.
+
+7. **Marking**
+   - Laser or ink mark includes Lot ID, Product Code, etc.
+
+8. **Post-Mold Singulation**
+   - Laser or dicing saw separates molded strip into units.
+
+9. **Final Test / Electrical Testing**
+   - ATE used to verify electrical performance.
+   - Devices are binned and sorted.
+
+10. **Packing & Shipping**
+   - Devices packed in JEDEC trays or tape-and-reel.
+
+---
+
+## 🛠️ Package Modeling in ANSYS AEDT
+
+### 🔹 Step 1: Setup AEDT
+- Launch AEDT
+- Choose a project type: `HFSS`, `Q3D`, or `Icepak`
+- Set units: `Modeler → Units → mm or µm`
+
+### 🔹 Step 2: Create the Die
+- Use `Draw → Rectangle` → 3mm x 3mm → Position: `(0,0,0)`
+- Apply `Thicken Sheet`: Thickness = `0.2 mm`
+- Assign material: `Silicon`
+
+![1](https://github.com/user-attachments/assets/a80cdc0f-994a-4da6-bb38-34ef7ab2e396)
+
+### 🔹 Step 3: Create the Substrate
+- Rectangle: `5mm x 5mm`, Offset Z = `-0.1 mm`
+- Thickness: `-0.5 mm`
+- Assign appropriate substrate material
+
+![2](https://github.com/user-attachments/assets/3dec9697-fccb-4326-97ec-a347374c55ee)
+
+### 🔹 Step 4: Add Die Attach Material (DAM)
+- Rectangle same size as die at origin `(0,0,0)`
+- Thickness: `-0.1 mm`
+- Assign material: `Modified Epoxy`
+
+![3](https://github.com/user-attachments/assets/112d30ac-86ae-4ddf-96bf-4d9ddc598a75)
+
+### 🔹 Step 5: Add Bond Pads
+- Size: `0.2 mm x 0.2 mm`, Thickness: `0.005 mm`
+- Place on both die and substrate edges
+- Material: `Copper`, `Gold`, or `Aluminum`
+
+![4](https://github.com/user-attachments/assets/20ee38d9-c9db-4081-ad88-49f940cbb28c)
+
+![5](https://github.com/user-attachments/assets/a4492563-f885-4a3c-bde5-217662d2ace1)
+
+### 🔹 Step 6: Create Bond Wires
+- Use `Draw → Bondwire`
+- Connect die and substrate pads
+- Wire type: `Gold` (recommended)
+
+![6](https://github.com/user-attachments/assets/60b4eccc-c4eb-41e3-b4a6-e14a26b8a752)
+
+### 🔹 Step 7: Mold Compound
+- Draw rectangle to encapsulate die and wires
+- Thickness: `1.2 mm`
+- Material: `Epoxy Molding Compound`
+
+![7](https://github.com/user-attachments/assets/618d83a8-64b8-49d4-9e4e-cf3e11d48d01)
+
+![8](https://github.com/user-attachments/assets/f23e5ecd-b014-4a76-bcfd-2b596299d279)
+
+### 🔹 Step 8: Final Steps
+- Add solder balls  
+- Define power & boundaries  
+- Setup mesh  
+- (Optional) Simulate & view results  
+
+![l5b](https://github.com/user-attachments/assets/fc85edad-84ac-4e2a-ba51-511d7262ef69)
+
+---
+
+## 🧠 Notes
+- Electrical/thermal analysis not covered in this lab.
+- Use tools like `ANSYS Q3D` and `Maxwell` for advanced evaluation.
+- This lab focuses on building geometry for wire bond packages.
+
+---
+
+
