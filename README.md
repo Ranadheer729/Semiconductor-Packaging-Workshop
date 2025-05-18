@@ -150,7 +150,7 @@ Finally, cost plays a decisive role. The chosen packaging solution must meet the
 
 The following outlines the general structure of a standard semiconductor package:
 
-![l2b](https://github.com/user-attachments/assets/2e6a5f8b-a4c1-44d2-95da-1a4916b4db22)
+![l2b](https://github.com/user-attachments/assets/e3bf33e3-4d0c-4490-93d7-d2015e0e25a9)
 
 1. **Die Placement**  
    The silicon die is mounted on a substrate or carrier. This step initiates both mechanical support and electrical contact.
