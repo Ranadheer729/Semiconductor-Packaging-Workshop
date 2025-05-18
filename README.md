@@ -608,7 +608,59 @@ The ATMP facility performs critical backend processing to convert bare dies into
 
 > 🔍 *Note:* Backend operations, while less glamorous than design or fabrication, are essential for yield, performance, and reliability optimization. Strategic investment in ATMP can significantly impact time-to-market and profitability.
 
+---
 
+## 📍 Lecture 2: Wafer Pre-Preparation – Grinding and Dicing
+
+This section describes the wafer thinning and singulation process performed inside a Class 7 ISO cleanroom of an ATMP (Assembly, Testing, Marking, Packaging) facility.
+
+---
+
+## 🧼 Cleanroom Environment
+
+![l2a](https://github.com/user-attachments/assets/c4b54975-0be6-497a-b1de-bc0924cd1b6b)
+
+Cleanroom Class: **ISO Class 7 (Class 1000–10000)**  
+Purpose:  
+- Minimize dust and particulate contamination  
+- Maintain precise control over temperature, humidity, and static discharge  
+- Ensure wafer integrity during sensitive steps  
+
+---
+
+## 🧾 Wafer Preparation Flow
+
+Wafers are delivered in sealed containers and processed through the following stages:
+
+### 1. Wafer Inspection & Electrical Testing
+- **Goal**: Identify defective dies and validate circuit functionality  
+- **Tools**: Automated Test Equipment (ATE), Visual Inspection Systems  
+
+### 2. Front-Side Protection (Lamination)
+- A polymer film is laminated on the **active side** to protect circuit features during backside processing.
+
+### 3. Wafer Flipping
+- The wafer is flipped **face-down** to expose the backside for thinning.
+
+### 4. Back Grinding
+- **Objective**: Reduce thickness from ~700–800 µm to ~50–100 µm  
+- **Notes**: Grinding induces stress; control methods are used to prevent cracking and wafer damage.
+
+### 5. Tape Mounting
+- The ground wafer is attached to a **dicing frame** using **UV-release tape** to stabilize it during singulation.
+
+### 6. Dicing (Die Singulation)
+- The wafer is separated into individual dies using:
+  - **Blade dicing** – High precision, mechanical method
+  - **Laser dicing** *(preferred)* – Contactless, low-stress technique with cleaner edges
+
+After dicing, the dies are ready for the **Die Attach** step in the packaging process.
+
+---
+
+## 🎥 Additional Resource
+
+📎 [A Look Inside – Amkor Manufacturing](https://www.youtube.com/watch?v=hR5orrmpoeE)
 
 
 
