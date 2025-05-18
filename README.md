@@ -302,6 +302,109 @@ All within a single package for high-performance computing and AI acceleration.
 
 ---
 
+# 📘 Lecture 4: Interposers, Redistribution Layers, and 2.5D/3D Packaging Approaches
+
+This lecture explores advanced semiconductor packaging technologies that support high-density integration, improved performance, and compact form factors — particularly important in cutting-edge domains like AI, HPC, and mobile devices.
+
+![l4a](https://github.com/user-attachments/assets/c933166a-92cb-40b8-a319-cfb29061ddde)
+
+---
+
+## 1️⃣ Redistribution Layers (RDL)
+
+### 🔍 What is RDL?
+
+A **Redistribution Layer (RDL)** is a thin metal layer added on top of a semiconductor die or wafer. Its purpose is to reroute the original I/O pads to new positions, allowing a more optimal layout for external connections such as solder bumps or balls. This is especially useful when the original pad arrangement is too fine or irregular for direct external connections.
+
+### 💡 Where RDL is Used
+
+- **Fan-out wafer-level packaging (FO-WLP, FO-BGA)**
+- **Panel-level packaging (PLP)**
+- **Multi-die and heterogeneous integration**
+- **System-in-Package (SiP)** platforms
+
+### ✅ Benefits
+
+- Supports wider bump pitches, enabling easier board-level integration.
+- Helps reduce total package height and footprint.
+- Facilitates placement and interconnection of multiple chips on a shared base.
+
+---
+
+## 2️⃣ Interposers
+
+### 🔍 What is an Interposer?
+
+An **interposer** is a passive or active layer inserted between one or more dies and the main package substrate. It functions as a high-density interconnect platform, enabling complex routing between dies while supporting power and signal integrity.
+
+### 📦 Interposer Types
+
+- **Silicon Interposers**: High routing density, suitable for high-speed signals.
+- **Organic Interposers**: Cost-effective and easier to manufacture.
+- **Glass Interposers**: Offer excellent electrical performance and thermal control.
+
+### ✅ Key Roles
+
+- Routes electrical signals between multiple dies (e.g., in chiplet-based designs).
+- Acts as a bridge for power and clock distribution.
+- Helps absorb mechanical and thermal stress due to CTE mismatch.
+
+### 🧠 Passive vs. Active Interposers
+
+| Type      | Description                                           |
+|-----------|-------------------------------------------------------|
+| Passive   | Purely for routing; includes vias and interconnects only. |
+| Active    | May contain embedded circuits like clock buffers, power regulators, or even memory. |
+
+---
+
+## 3️⃣ 2.5D and 3D Packaging Integration
+
+These approaches are designed to push the limits of integration density and performance.
+
+### 🧩 2.5D Integration
+
+In a **2.5D architecture**, multiple chips (e.g., a processor and memory dies) are mounted side by side on a **shared interposer**. The interposer provides internal connectivity, while the entire assembly is then connected to the substrate.
+
+**Use Cases**:
+- High Bandwidth Memory (HBM) integration
+- Advanced GPUs and AI accelerators (e.g., AMD Instinct, NVIDIA H100)
+
+### 🧠 Benefits of 2.5D
+
+- High interconnect density between dies
+- Lower latency and power consumption than traditional PCB routing
+- Better thermal distribution than vertically stacked dies
+
+---
+
+### 🧩 3D Integration
+
+**3D packaging** involves vertically stacking semiconductor dies, forming a single compact block. Dies are interconnected through **Through-Silicon Vias (TSVs)**, enabling direct vertical communication.
+
+**Use Cases**:
+- 3D NAND flash memory
+- HBM memory stacks
+- Logic-on-logic stacking for performance boosts
+
+### 🧠 Benefits of 3D
+
+- Minimizes interconnect distance → faster signal transmission
+- Reduces package footprint
+- Enables memory bandwidth scaling (e.g., in HBM stacks)
+
+---
+
+## ✅ Summary
+
+| Technology      | Key Purpose                         | Common Applications              |
+|-----------------|--------------------------------------|----------------------------------|
+| RDL             | Pad rerouting and I/O redistribution | FO-WLP, SiP, PLP                 |
+| Interposers     | High-density signal routing          | Chiplet-based SoCs, HBM stacks   |
+| 2.5D Packaging  | Side-by-side multi-die integration   | AI/ML, HPC, GPUs                 |
+| 3D Packaging    | Vertical die stacking                | Memory (HBM, NAND), logic chips  |
+
+Advanced packaging technologies like RDL, interposers, and 2.5D/3D integration are enabling unprecedented levels of integration and performance in modern semiconductor systems.
 
 
 
