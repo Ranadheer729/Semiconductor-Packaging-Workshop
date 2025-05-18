@@ -662,5 +662,54 @@ After dicing, the dies are ready for the **Die Attach** step in the packaging pr
 
 📎 [A Look Inside – Amkor Manufacturing](https://www.youtube.com/watch?v=hR5orrmpoeE)
 
+---
+ 
+## 📍 Lecture 3: Wire Bond Packaging – Die Attach to Molding
+
+Wire bonding is a widely adopted method to establish electrical connections between a silicon die and the package leads or substrate. Using fine metal wires (gold, copper, or aluminum), it bridges the internal circuitry to the external world. This process is integral to many standard packaging types such as QFN, SOP, and select BGA packages due to its maturity, affordability, and reliability.
+
+---
+
+## 📦 Wire Bond Packaging Process – Step-by-Step
+
+![l3a](https://github.com/user-attachments/assets/481a3820-8840-449f-9690-d638a9afa233)
+
+### 🔹 1. Start with a Diced Wafer
+- Individual dies (chips) are prepared from a previously singulated wafer.
+
+### 🔹 2. Die Selection & Placement (Die Attach)
+- A functional die is selected and positioned onto a substrate (either leadframe or laminate-based).
+- Die attach film or epoxy is applied as an adhesive to hold the die in place.
+
+### 🔹 3. Curing
+- The adhesive is cured using heat or UV light to solidify the bond and minimize mechanical stress.
+
+### 🔹 4. Wire Bonding
+- Fine metal wires are connected from the die pads to the package terminals.
+- Acts like miniature “flyovers” providing electrical pathways.
+
+### 🔹 5. Molding / Encapsulation
+- A protective mold compound is applied to cover the die and wire bonds.
+- Offers mechanical support and environmental protection.
+
+### 🔹 6. Marking
+- Unique identifiers like part numbers and batch codes are printed on the package for traceability.
+
+### 🔹 7. Singulation (Final Dicing)
+- The molded panel is cut into individual IC packages using a precision dicing saw.
+
+---
+
+## ✅ Key Highlights
+- Wire bonding remains a preferred method in electronics manufacturing due to:
+  - Cost efficiency
+  - Compatibility with various package types
+  - Ease of integration into mass production lines
+
+---
+
+## 🎥 Additional Resource  
+📎 [HB100 Automatic Wire Bonder](https://www.youtube.com/watch?v=3YkGrhvrWxA)
+
 
 
