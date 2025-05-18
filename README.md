@@ -779,3 +779,73 @@ Wire bonding is a widely adopted method to establish electrical connections betw
 
 ---
 
+## 📍 Lecture 5: Wafer-Level Packaging and Conclusion
+
+**Wafer-Level Packaging (WLP)** is a modern semiconductor packaging method where the entire packaging process is completed **before dicing** the wafer. This approach differs from traditional packaging, which processes each die after separation. WLP offers benefits like **smaller size, improved performance, and reduced cost**, making it popular in mobile and consumer electronics.
+
+![l5a](https://github.com/user-attachments/assets/ce418a76-d68b-493c-b609-d576cf7c792b)
+
+---
+
+## 🔄 WLP vs Traditional Packaging
+
+| Feature               | Traditional Packaging        | Wafer-Level Packaging (WLP)     |
+|------------------------|------------------------------|----------------------------------|
+| Timing of Packaging     | After dicing                 | Before dicing                   |
+| Package Size            | Larger                      | Compact                         |
+| Cost Efficiency         | Moderate                     | High (especially in volume)     |
+| Performance             | Good                         | Better (shorter interconnects)  |
+
+---
+
+## 🧪 Types of Wafer-Level Packaging
+
+### 🔸 Fan-In WLP
+- **Interconnects remain within** the die’s original footprint.
+- Ideal for lower I/O applications.
+  
+### 🔸 Fan-Out WLP (FOWLP)
+- **Interconnects extend beyond** the die’s edge.
+- Supports more I/Os and advanced integration.
+- Enables smaller packages and eliminates traditional substrates.
+
+---
+
+## 🔧 FOWLP – Step-by-Step Process Overview
+
+### 1️⃣ Flip Chip Orientation
+- The die is placed **face-down** and embedded into **Epoxy Molding Compound (EMC)**.
+
+### 2️⃣ No Traditional Substrate
+- FOWLP **eliminates the need for a laminate-based substrate**, saving space and cost.
+
+### 3️⃣ Redistribution Layer (RDL)
+- Metal routing layers (RDLs) are added to reroute the die’s I/O to the package edge.
+- Built over the **molded wafer** rather than through substrate vias.
+
+### 4️⃣ Reconstitution Process
+- Multiple dies are placed on a **temporary carrier** and closely packed.
+- The assembly is **molded** into a single reconstituted wafer.
+
+### 5️⃣ Post-Mold RDL Formation
+- Dielectric and metal layers are deposited and patterned on the **molded wafer surface**.
+- Multiple RDL layers form the **interconnection network**.
+
+### 6️⃣ Solder Ball Mounting
+- **Solder balls** are mounted on the final RDL pads for board-level connections.
+
+### 7️⃣ Carrier Removal & Dicing
+- The carrier is detached, and the **reconstituted wafer is diced** into individual packages.
+
+---
+
+## ✅ Key Benefits of WLP & FOWLP
+
+- **Smaller footprint**
+- **Elimination of substrate**
+- **High-density interconnects**
+- **Enhanced electrical and thermal performance**
+- **Cost-effective for high-volume production**
+
+---
+
