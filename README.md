@@ -496,6 +496,118 @@ Selecting the right package is a multi-dimensional decision that involves balanc
 
 > 🧠 **Tip**: Early collaboration with packaging engineers and OSAT partners can reduce redesign cycles and accelerate time to market.
 
+---
+
+# 📘 Module 2: From Wafer to Package – Assembly and Manufacturing Essentials  
+## 📍 Lecture 1: Setting the Stage – Supply Chain and Facilities
+
+This lecture offers a foundational understanding of the semiconductor supply chain and the structure of a modern packaging facility, commonly referred to as ATMP (Assembly, Testing, Marking, and Packaging).
+
+---
+
+## 🔄 Semiconductor Supply Chain Overview
+
+The semiconductor supply chain is a highly specialized, globally distributed ecosystem involving multiple stages — from conceptual design to finished system integration. Each stage demands collaboration between distinct players with deep domain expertise.
+
+![L1A](https://github.com/user-attachments/assets/6eaafba0-8252-4e16-baa2-1357deaf5657)
+
+---
+
+### 🧠 1. Design & IP Development
+
+- **Inputs**: Product specifications, IP cores, EDA tools  
+- **Process**: System architecture → RTL coding → Synthesis → APR → Verification  
+- **Output**: GDSII layout file (used for photomask creation at the foundry)  
+- **Key Players**:  
+  - **Fabless firms**: AMD, NVIDIA  
+  - **EDA tool vendors**: Synopsys, Cadence, Siemens EDA  
+
+---
+
+### 🏭 2. Wafer Fabrication (Foundry)
+
+- **Inputs**: GDSII file, raw silicon wafers, photomasks, chemicals  
+- **Process**: Photolithography, etching, ion implantation, deposition, planarization  
+- **Output**: Processed wafers containing multiple dies  
+- **Key Foundries**: TSMC, Samsung, Intel Foundry Services, GlobalFoundries  
+
+---
+
+### 📦 3. Packaging & Substrate Integration
+
+- **Inputs**: Singulated dies, substrates (e.g., ABF, BT resin), solder bumps  
+- **Process**: Die attach, wire bonding or flip-chip, encapsulation, RDL/interposer addition  
+- **Output**: Fully packaged semiconductor devices (e.g., BGA, QFN, 2.5D/3D stacks)  
+- **Key Companies**: ASE Group, Amkor, JCET, Shinko, Ibiden  
+
+---
+
+### 🧪 4. Assembly and Test (OSAT)
+
+- **Inputs**: Packaged ICs, test scripts, ATE systems  
+- **Process**: Functional testing, parametric validation, burn-in, yield binning  
+- **Output**: Verified and performance-binned ICs  
+- **Key OSAT Providers**: ASE, Amkor, UTAC, Powertech  
+
+---
+
+### 📱 5. System-Level Integration & Distribution
+
+- **Inputs**: ICs, PCBs, passive components  
+- **Process**: SMT assembly, board-level integration, final system testing  
+- **Output**: Complete electronic products (e.g., smartphones, servers)  
+- **Ecosystem Example**:  
+  - **OEM**: Apple  
+  - **ODM**: Quanta  
+  - **EMS**: Foxconn  
+
+---
+
+## 🏭 Inside a Package Manufacturing Facility (ATMP)
+
+The ATMP facility performs critical backend processing to convert bare dies into market-ready, functional ICs.
+
+### ✴️ Core ATMP Functions
+
+1. **Assembly** – Die attach, bonding, molding  
+2. **Testing** – Electrical, functional, reliability tests  
+3. **Marking** – Laser engraving, traceability codes  
+4. **Packaging** – Labeling and logistics for shipment  
+
+---
+
+### 🗺️ Typical Layout of an ATMP Facility
+
+| **Section**                   | **Function**                                                                 |
+|------------------------------|-------------------------------------------------------------------------------|
+| **Admin / Engineering Lab**  | Design validation, data analysis, quality systems                            |
+| **Warehouse / Receiving**    | Incoming materials: wafers, substrates, leadframes, molding compounds        |
+| **Cleanroom / Production**   | Die prep, die attach, bonding (wire/flip-chip), encapsulation, final assembly|
+| **Test Area**                | Electrical testing, burn-in, functionality verification, yield improvement    |
+| **Marking / Inspection**     | Laser marking, visual inspection, QA                                          |
+| **Packing & Shipping**       | Labeling, reel/tape packaging, logistics coordination                         |
+
+![LIB](https://github.com/user-attachments/assets/c6456b42-595b-4561-9715-6eccd1055320)
+
+---
+
+## 🌐 Global ATMP Footprint
+
+### 📍 Major Manufacturing Hubs
+
+- **Southeast Asia**: Malaysia, Vietnam, Philippines, Thailand  
+- **East Asia**: Taiwan, South Korea, China  
+- **Emerging Locations**: India, Mexico
+
+### 🔧 Key ATMP Players
+
+- **OSAT Providers**: ASE Group, Amkor, JCET, UTAC  
+- **IDMs with In-House ATMP**: Intel, Samsung, Micron  
+
+---
+
+> 🔍 *Note:* Backend operations, while less glamorous than design or fabrication, are essential for yield, performance, and reliability optimization. Strategic investment in ATMP can significantly impact time-to-market and profitability.
+
 
 
 
