@@ -849,3 +849,135 @@ Wire bonding is a widely adopted method to establish electrical connections betw
 
 ---
 
+# 📘 Module 3: Labs – Thermal Simulation of Semiconductor Packages with ANSYS
+
+**ANSYS Electronics Desktop (AEDT)** serves as an integrated platform that hosts a suite of electromagnetic, thermal, and circuit simulation tools within a unified GUI. It’s widely used in the development of high-speed electronics such as IC packages, PCBs, RF modules, and power devices.
+
+---
+
+## 🛠️ Key Features of ANSYS Electronics Desktop
+
+### 🔗 Unified Simulation Platform
+- Combines solvers like HFSS, Icepak, Maxwell, SIwave, Q3D, and Circuit Designer.
+- Enables seamless transitions between physics and consistent project setup.
+
+### ⚙️ Simulation Capabilities
+- **HFSS** – 3D EM analysis for antennas, connectors, and packages.
+- **Maxwell** – Low-frequency magnetic and electric field simulation.
+- **Q3D Extractor** – RLC parasitic extraction for interconnect modeling.
+- **Icepak** – Advanced thermal and airflow simulation.
+- **SIwave** – Power and signal integrity simulation for boards and packages.
+- **Circuit Designer** – Time and frequency domain circuit simulation.
+
+### 🔁 Multiphysics Coupling
+- Supports co-simulation between electrical and thermal domains.
+- Enables electro-thermal, electro-mechanical, and system-level accuracy.
+
+### 🧩 3D Layout & ECAD Integration
+- Imports designs from ECAD tools (Cadence, Altium, Mentor, etc.).
+- Supports advanced package designs: BGA, FOWLP, Flip-Chip, Stacked-Die.
+
+### 🚀 HPC & Automation
+- Multithreaded and distributed simulation for faster execution.
+- Scripting with IronPython and ACT for custom tool extensions.
+
+---
+
+## 🧊 Ansys Icepak Lab: Thermal Simulation of a Flip-Chip BGA Package
+
+This lab walks through simulating a **Flip-Chip BGA (Ball Grid Array)** with a power input of **1W**, using **Ansys Icepak**.
+
+---
+
+### 🛠️ Step 1: Insert Icepak Design
+- Launch **ANSYS Workbench**
+- Navigate to: `Project > Insert Icepak Design`
+- Access the Icepak environment via the top toolbar
+
+---
+
+### 📦 Step 2: Create a Flip-Chip BGA Model
+- Go to: `Icepak > Toolkit > Geometry > Packages > Flipchip_BGA`
+- Set parameters:
+  - `xLength`: 15 mm
+  - `yLength`: 15 mm
+  - `Package Thickness`: 3 mm
+  - `Model Type`: Detailed
+  - `Symmetry`: Full
+- Click **OK** to generate and view the 3D model
+
+---
+
+### 📂 Step 3: Inspect Model Structure
+- In the **Model Tree**, expand to view components such as:
+  - Substrate
+  - Die
+  - Underfill
+
+---
+
+### ♨️ Step 4: Input Thermal Power
+- Navigate to: `Project Manager > Thermal`
+- Set `Power` to **1W** and apply
+
+---
+
+### 🌡️ Step 5: Assign Thermal Conditions
+- Select `Flipchip-BGA1_substrate` from Solids
+- Right-click: `Assign Thermal > Source`
+- Set the condition to **Ambient Temperature**
+- Remove unnecessary elements like `Flipchip_BGA_trace1` if present
+
+---
+
+### 📈 Step 6: Set Temperature Monitors
+- Assign temperature monitor points to:
+  - Substrate
+  - Die
+  - Underfill
+
+---
+
+### 🧩 Step 7: Generate Mesh
+- Go to: `Mesh > Generate Mesh`
+- Save the file when prompted
+
+---
+
+### 🔍 Step 8: Check Mesh Quality
+- Navigate to: `Mesh Visualization > Quality`
+- Evaluate:
+  - Face Alignment
+  - Skewness
+  - Volume Quality
+
+---
+
+### ✅ Step 9: Validate Simulation Setup
+- Click `Validate` from the toolbar
+- Ensure all checks are completed successfully (green ticks)
+
+---
+
+### 📊 Step 10: Run Analysis & Plot Results
+- Click `Analyze All`
+- Go to: `Plot Field > Temperature`
+- Configure plot settings:
+  - Enable: Specify Name, Folder, Plot Surface Only
+  - Enable: Gaussian Surface Smoothing
+- Confirm with OK, then click **Done**
+
+---
+
+## 🎓 Outcome
+
+![l3a](https://github.com/user-attachments/assets/d3cfdb7b-817c-4ef8-b9ac-06164c49bb4b)
+
+![l3b](https://github.com/user-attachments/assets/5bf50f7c-700c-46e4-84cb-84665845fb1e)
+
+- Successfully simulated a **Flip-Chip BGA** thermal model under a 1W power load
+- Observed heat flow, temperature hotspots, and evaluated thermal performance
+
+---
+
+> 🧠 Remember: Good thermal design directly impacts system reliability and product lifespan.
