@@ -672,7 +672,7 @@ Wire bonding is a widely adopted method to establish electrical connections betw
 
 ## 📦 Wire Bond Packaging Process – Step-by-Step
 
-![l3a](https://github.com/user-attachments/assets/481a3820-8840-449f-9690-d638a9afa233)
+![l3a](https://github.com/user-attachments/assets/134627e2-74c2-4366-ae45-69e4e644c5d7)
 
 ### 🔹 1. Start with a Diced Wafer
 - Individual dies (chips) are prepared from a previously singulated wafer.
