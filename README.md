@@ -981,3 +981,89 @@ This lab walks through simulating a **Flip-Chip BGA (Ball Grid Array)** with a p
 ---
 
 > 🧠 Remember: Good thermal design directly impacts system reliability and product lifespan.
+
+---
+
+# 📦 Module 4: Ensuring Package Reliability  
+## 🧪 Lecture 1: Introduction to Package Testing and Electrical Functionality Checks
+
+Semiconductor testing is an essential part of ensuring product quality, performance, and long-term reliability. It occurs throughout various stages of the semiconductor manufacturing lifecycle—beginning at the wafer level and continuing until the final product is delivered.
+
+Testing is typically carried out both at the **Foundry** and through **OSAT (Outsourced Semiconductor Assembly and Test)** partners.
+
+---
+
+## 🏭 Foundry Testing Stages
+
+![l4a](https://github.com/user-attachments/assets/0015aeba-267f-401f-b1e7-388e6e248fd4)
+
+### 🔬 1. Front-End Manufacturing
+- Focuses on wafer fabrication where integrated circuits are built on silicon substrates.
+- Includes process tuning and quality control to maximize wafer yield and performance.
+
+### 💡 2. Wafer Probe Test
+- Uses **Automated Test Equipment (ATE)** and **probe cards** to test individual dies before dicing.
+- Each die is contacted at its I/O pads or bumps using a probe station.
+- Detects non-functional dies early in the production cycle.
+
+---
+
+## 🧪 OSAT (Assembly and Test) Stage
+
+Once functional dies are identified, they are sent for packaging and post-packaging tests.
+
+### 🏗️ Package Manufacturing Steps
+- **Die Bonding**: Attaching the die to the package substrate.
+- **Wire Bonding / Flip-Chip Bonding**: Electrical interconnection methods.
+- **Encapsulation**: Protecting the die and wires with molding compounds.
+
+---
+
+### ✅ Post-Packaging Testing in Cleanroom Facilities
+
+- Tests are conducted in **ISO Class 6/7 cleanroom** environments to avoid contamination.
+ 
+![l4b](https://github.com/user-attachments/assets/217e35cc-6ced-427c-935e-6e86e54d6305)
+
+#### Key Tests Performed:
+1. **AOST (Assembly Open and Short Test)**  
+   - Fast screening to detect opens or shorts in the interconnects.
+
+  ![l4c](https://github.com/user-attachments/assets/62ade9b2-6b93-485a-9b44-1fc44f5389ce)
+
+2. **Burn-In Testing**  
+   - Exposes the device to elevated temperature and voltage conditions.
+   - Accelerates aging to identify early-life failures (infant mortality).
+
+3. **Final Test (Post-Packaging Functional Test)**  
+   - Uses ATE to validate:
+     - Complete chip functionality
+     - I/O interface performance
+     - Timing accuracy
+     - Power usage and leakage levels
+   - Conducted across multiple temperature ranges to ensure robustness.
+
+---
+
+## 🧠 3. System-Level Test (SLT)
+
+- Simulates the chip in its **real-world application environment**.
+- Example: Placing an SoC on a mobile phone test board to evaluate interactions.
+- Checks:
+  - Communication with memory, sensors, and external interfaces.
+  - Timing reliability and power integrity in actual use cases.
+- Purpose: Detect failures or edge cases not visible during ATE testing.
+
+---
+
+## 🎯 Summary
+
+Multiple layers of testing are critical to ensuring that semiconductor devices are:
+- Electrically functional
+- Free from early-life failures
+- Capable of operating reliably in their final systems
+
+These processes combine **probe testing**, **burn-in**, **functional validation**, and **system-level verification** to deliver high-yield, high-reliability semiconductor products.
+
+---
+
