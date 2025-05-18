@@ -1067,3 +1067,101 @@ These processes combine **probe testing**, **burn-in**, **functional validation*
 
 ---
 
+## 🧪 Lecture 2: Reliability and Performance Testing of Semiconductor Packages
+
+This lecture focuses on the essential testing stages involved in ensuring semiconductor package reliability and performance, with an emphasis on **Burn-In Testing**, **Final Testing**, and the role of **Automated Test Equipment (ATE)**.
+
+---
+
+## 🔥 Burn-In Testing
+
+Burn-in is a **reliability screening technique** used to detect early-life failures in integrated circuits (ICs) before they are released to customers. Devices are exposed to **high temperature and voltage stress** over extended periods to accelerate failure mechanisms.
+
+![l2a](https://github.com/user-attachments/assets/83f54174-a0f0-4065-8e05-5f51a6c760cd)
+
+### 🎯 Objectives:
+- Identify and eliminate latent defects from manufacturing
+- Enhance product reliability and longevity
+- Test performance under extreme stress
+- Qualify ICs for critical use cases
+
+### 🔁 Typical Conditions:
+- **Temperature**: 125°C to 150°C (sometimes higher)
+- **Voltage**: 1.5× to 2× of standard operating voltage
+- **Duration**: 24 to 168 hours
+- **Environment**: Controlled thermal chambers or ovens under powered conditions
+
+### ✔️ Common in:
+- Automotive ICs (AEC-Q100 qualified)
+- Aerospace and defense systems
+- Medical-grade electronics
+- High-end processors and FPGAs
+
+### ❌ Less common in:
+- Mass-market consumer devices due to added cost and time
+
+---
+
+## ✅ Final Test (FT) – Post-Packaging Electrical Testing
+
+Final Test is the concluding phase of IC testing after packaging. It confirms whether the fully packaged chip functions correctly across all electrical parameters and operating conditions.
+
+![l2b](https://github.com/user-attachments/assets/96e4f181-43bd-4373-a73c-3bed0ee10cbb)
+
+### 🔄 Typical Test Flow:
+
+1. **Device Loading**
+   - Packaged ICs are placed into automated handlers
+   - Handlers insert devices into test sockets
+
+2. **ATE Interface**
+   - Devices interface with **Automated Test Equipment (ATE)**
+   - Electrical stimuli (voltage, current, signal patterns) are applied
+
+3. **Test Execution**
+   - **DC Tests**: Leakage currents, voltage thresholds
+   - **AC Tests**: Timing performance, signal integrity
+   - **Functional Tests**: Logic validation, memory testing
+   - **Parametric Tests**: Power, I/O voltage levels
+
+4. **Binning**
+   - Devices are graded by performance (e.g., speed, power)
+   - Failed units are filtered out
+
+5. **Marking and Packing**
+   - Good units are labeled and packed for shipping
+
+---
+
+## 🤖 Automated Test Equipment (ATE)
+
+ATE refers to advanced systems that **automate electrical and functional testing** of semiconductor devices at both wafer-level and final packaging stages.
+
+### 💼 Test Categories:
+
+- **Parametric Testing**: Validates voltage, current, and threshold levels
+- **Functional Testing**: Confirms correct logical operations and output
+- **Speed Testing**: Measures clock speed and processing delays
+
+### 📊 Key Metrics:
+- **Yield**: Ratio of functional chips to total tested
+- **Test Time**: Efficiency and throughput of testing process
+- **Coverage**: Percent of chip functionality verified
+
+### 🧰 Example Equipment:
+- In-Circuit Testers (ICT)
+- COBOTs (Collaborative Robots for handling)
+- Automated Handler Units for high-speed insertion/removal
+
+---
+
+## 📌 Conclusion
+
+![l2c](https://github.com/user-attachments/assets/3c086613-354d-442c-8cdf-663533daf69e)
+
+Burn-In, Final Test, and ATE collectively ensure that semiconductor packages:
+- Meet reliability standards
+- Operate correctly across all electrical parameters
+- Are ready for real-world deployment
+
+These steps are especially crucial for high-performance and mission-critical applications.
